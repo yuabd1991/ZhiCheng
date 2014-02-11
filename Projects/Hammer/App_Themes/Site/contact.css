@@ -1,0 +1,32 @@
+/*内页联系我们*/
+#acontact{margin-top:-5px;}
+.acontact .title{height:49px;background:url(images/title1.png) 0 -632px no-repeat}
+#acontact .nav {overflow:hidden;height:38px;width:660px;background:url(images/acontact.jpg) 0 0 no-repeat;}
+#acontact .nav li {float:left;width:90px;}
+#acontact .nav li.last{width:90px;}
+#acontact .nav li a {display:block;height:38px;line-height:28px;color:#999493;font-size:14px;text-align: center;border: 0;blr:expression(this.onFocus=this.blur());}
+#acontact .nav li a.current{background:url(images/i.png) 0 -1165px no-repeat;color:#00a4ea;}
+#acontact .nav li a:hover, #warpsub .nav li a:focus {color:#00a4ea}
+#acontact .list-wrap{width:638px; overflow:hidden;border:1px #D2D2D2 solid;border-top:none;padding:10px;}
+#acontact .lxfs{color:#2A2A2A;line-height:25px;}
+#acontact .lxfs p a{color:#2A2A2A;}
+#acontact .share{float:left;padding-top:12px;padding-bottom:11px;height:16px;line-height:16px;}
+
+
+#acontact .hkzh{}
+#acontact .hkzh .title{height:49px;background:url(images/title1.png) 0 -690px no-repeat}
+#acontact .hkzh .record{color:#999594;padding:10px 0}
+#acontact .hkzh .tit{width:214px;height:64px;}
+#acontact .hkzh .bjbank,#acontact .hkzh .gsbank,#acontact .hkzh .jsbank,#acontact .hkzh .nybank,#acontact .hkzh .jtbank{float:left;border:1px #D0D0D0 solid;width:230px;padding:17px;}
+#acontact .hkzh .bjbank .tit{background:url(images/bank.png) 0 0 no-repeat;}
+#acontact .hkzh .gsbank .tit{background:url(images/bank.png) 0 -80px no-repeat}
+#acontact .hkzh .jsbank .tit{background:url(images/bank.png) 0 -156px no-repeat}
+#acontact .hkzh .nybank .tit{background:url(images/bank.png) 0 -234px no-repeat}
+#acontact .hkzh .jtbank .tit{background:url(images/bank.png) 0 -307px no-repeat}
+#acontact .hkzh .mr{margin-right:12px;margin-bottom:14px;}
+#acontact .hkzh .record{float:left;padding:0;width:610px;height:25px;}
+
+#jquerytuts2 .job{width:618px;}
+#jquerytuts2 .job table{border-collapse: collapse;/*border:1px #DCE1E4 solid;*/width:100%;margin-bottom:15px;}
+#jquerytuts2 .job table th{text-align:left;background:#ECEAEA;border:1px #D0D0D0 solid;padding:6px;}
+#jquerytuts2 .job table td{padding:6px;/*border:1px #DCE1E4 solid;*/}

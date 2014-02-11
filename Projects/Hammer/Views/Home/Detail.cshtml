@@ -1,0 +1,41 @@
+﻿@model Entity.Entities.ArticleEntity
+@{
+    ViewBag.Title = Model.Title;
+	ViewBag.MetaDescription = Model.MetaDescription;
+	ViewBag.MetaKeywords = Model.MetaKeywords;
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+@section head{
+	<link href="@Url.Content("~/App_Themes/Site/news.css")" rel="stylesheet" type="text/css" />
+}
+<div class="wl f_l">
+	<div class="CurrentLocation">
+		当前位置： <a href="/">首页</a> &gt; <a href="/Home/NewsList/@ViewBag.Column.ID" title="@ViewBag.Column.ColumnName">@ViewBag.Column.ColumnName</a> &gt; @Model.Title
+	</div>
+	<div class="wzDetailed cl">
+		<div class="titleinfo">
+			<h1>@Model.Title</h1>
+			<div class="info">
+                <span class="date">时间: @Model.UpdateTime.Value.ToShortDateString()</span>
+                <span class="ly">来源: @Model.Source</span>
+                <span class="click">点击: @Model.PageVisits</span>
+                <span class="zz">作者: @Model.Author</span>
+                <span class="fx">
+					<!-- Baidu Button BEGIN -->
+
+					<!-- Baidu Button END -->
+				</span>
+            </div>
+			<div class="jj">
+				@Model.Overview
+			</div>
+			<div class="content">
+				@Html.Raw(Model.Content)
+			</div>
+		</div>
+	</div>
+</div>
+@*右边*@
+<div class="wr f_r">
+	@{Html.RenderAction("SiteNews", "Home");}
+</div>

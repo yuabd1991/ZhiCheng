@@ -1,0 +1,17 @@
+﻿@model Entity.Entities.DocumentEntity
+@{
+	ViewBag.Title = "Document";
+	Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+<div class="box path">
+	<a href="/">首页</a> > <a href="">@Model.Title</a>
+</div>
+<div class="content-left float">
+	<div class="box">
+		<h2>@Model.Title</h2>
+		<p>@Html.Raw(Model.Content)</p>
+	</div>
+</div>
+<div class="content-right float">
+	@{Html.RenderAction("SiteNews", "Home");}
+</div>

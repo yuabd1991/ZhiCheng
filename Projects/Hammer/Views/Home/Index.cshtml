@@ -1,0 +1,380 @@
+﻿@{
+	ViewBag.Title = ViewBag.System.PageTitle;
+	ViewBag.MetaDescription = ViewBag.System.MetaDescription;
+	ViewBag.MetaKeywords = ViewBag.System.MetaKeywords;
+	Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+@section head{
+	<link href="@Url.Content("~/App_Themes/Site/rhinoslider-1.05.css")" rel="stylesheet" type="text/css" />
+}
+@section scripts{
+	<script src="@Url.Content("~/Scripts/rhinoslider-1.05.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/mousewheel.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/easing.js")" type="text/javascript"></script>
+	<script>
+		$(function () {
+			$('#slider').rhinoslider();
+		});
+	</script>
+}
+<div class="slider cl">
+	<ul id="slider">
+		<li>
+			<img src="@Url.Content("~/content/images/slider001.jpg")" alt="" title="">
+		</li>
+		<li>
+			<img src="@Url.Content("~/content/images/slider001.jpg")" alt="" title="">
+		</li>
+		<li>
+			<img src="@Url.Content("~/content/images/slider001.jpg")" alt="" title="">
+		</li>
+		<li>
+			<img src="@Url.Content("~/content/images/slider001.jpg")" alt="" title="">
+		</li>
+		<li>
+			<img src="@Url.Content("~/content/images/slider001.jpg")" alt="" title="">
+		</li>
+	</ul>
+	
+</div>
+<div class="cl">
+	<div class="about f_l">
+		<div class="title">
+			<h3>
+			</h3>
+			<span class="more"><a href="/School">&gt;&gt;更多</a></span></div>
+		<div class="txt">
+			<img src="/Content/images/home-about-img.jpg" alt="" style="float: left; width: 105px;">志诚学校创建于上个世纪90年代，志诚学校创建于上个世纪90年代，志诚学校创建于上个世纪90年代，志诚学校创建于上个世纪90年代</div>
+		<div class="anav">
+			<a href="#" target="_blank">我们的优势</a> <a href="#" target="_blank">光辉历程</a> <a href="#"
+				target="_blank">学校环境</a>
+		</div>
+	</div>
+	<div class="main_l tab">
+		<div class="main_title">
+			<ul class="fx">
+				<li class="on">热门</li>
+				<li class="">就业</li>
+				<li class="">提升</li>
+			</ul>
+		</div>
+		<div class="main_content clearfix">
+			<div class="main_box t">
+				<div class="list">
+					<dl>
+						<dt>美发</dt>
+						<dd>
+							<a href="#" target="_blank">化妆一班</a><span class="gray">(21800元)</span> <span style="display: none">
+								&nbsp;</span><a href="#" target="_blank">化妆精英班</a><span
+									class="gray">(12680元)</span><br>
+							<span style="display: none">&nbsp;</span><a href="#"
+								target="_blank">化妆大专业</a><span class="gray">(39880元)</span>&nbsp;<a href="#"
+									target="_blank">专业化妆班</a><span class="gray">(6980元)</span><br>
+							<span style="display: none">&nbsp;</span><a href="#"
+								target="_blank">化妆大师班</a><span class="gray">(3980元)</span>&nbsp;&nbsp;<a href="#"
+									target="_blank">淘宝化妆</a><span class="gray">(1980元)</span></dd>
+					</dl>
+					<dl>
+						<dt>保健养生</dt>
+						<dd>
+							<a href="/makeup/kecheng/2011111022.htm" target="_blank">化妆一年班</a><span class="gray">(21800元)</span>
+							<a href="/makeup/kecheng/2011111021.htm" target="_blank">化妆精英班</a><span class="gray">(12680元)</span><br>
+							<span class="gray"><a href="/makeup/kecheng/2011111023.htm" target="_blank">化妆大专班</a>(39880元)&nbsp;</span><a
+								href="/makeup/kecheng/2011111019.htm" target="_blank">专业化妆班</a><span class="gray">(6680元)</span><br>
+							<a href="/makeup/kecheng/2011111018.htm" target="_blank">化妆大师班</a><span class="gray">(3980元)&nbsp;
+							</span><a href="/makeup/kecheng/2013062044.htm" target="_blank">喷枪彩妆课</a><span class="gray">(2980元)</span></dd>
+					</dl>
+					<dl style="height: 86px">
+						<dt>形象设计</dt>
+						<dd>
+							<a href="/Photoshop/kecheng/2011111435.htm" target="_blank">专业修图师</a><span class="gray">(6680元)&nbsp;
+							</span><a href="/Photoshop/kecheng/2011111436.htm" target="_blank">数码修图班</a><span
+								class="gray">(4580元)</span><br>
+							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">数码高研班</a><span class="gray">(3580元)</span></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="yhhd f_r">
+		<div class="title">
+			<h3>
+			</h3>
+			<span class="more"><a href="#" target="_blank">&gt;&gt;更多</a></span></div>
+		<dl class="fd_list">
+			<dt class="open"><a href="#">两年化妆大专班 最高直降5000元 送职业资格证书</a></dt>
+			<dd style="display: block;">
+				<div class="img">
+					<img width="92" height="78" src="content/images/20120926030353395.jpg"></div>
+				<div class="info">
+					<p>
+						活动时间</p>
+					<p class="gray">
+						2013.12.01 - 2014.01.30</p>
+					<p class="xqa">
+						<a href="#" title="查看详情" target="_blank"></a>
+					</p>
+				</div>
+			</dd>
+			<dt class=""><a href="#" target="_blank">一年化妆全科班 最高优惠3000元 赠大师班课程</a></dt>
+			<dd style="display: none;">
+				<div class="img">
+					<img width="92" height="78" src="content/images/20120926030353395.jpg"></div>
+				<div class="info">
+					<p>
+						活动时间</p>
+					<p class="gray">
+						2013.12.01 - 2014.01.30</p>
+					<p class="xqa">
+						<a href="#" title="查看详情" target="_blank"></a>
+					</p>
+				</div>
+			</dd>
+			<dt class=""><a href="#" target="_blank">一年化妆全科班 最高优惠3000元 赠大师班课程</a></dt>
+			<dd style="display: none;">
+				<div class="img">
+					<img width="92" height="78" src="content/images/20120926030353395.jpg"></div>
+				<div class="info">
+					<p>
+						活动时间</p>
+					<p class="gray">
+						2013.12.01 - 2014.01.30</p>
+					<p class="xqa">
+						<a href="#" title="查看详情" target="_blank"></a>
+					</p>
+				</div>
+			</dd>
+			<dt class=""><a href="#" target="_blank">一年化妆全科班 最高优惠3000元 赠大师班课程</a></dt>
+			<dd style="display: none;">
+				<div class="img">
+					<img width="92" height="78" src="content/images/20120926030353395.jpg"></div>
+				<div class="info">
+					<p>
+						活动时间</p>
+					<p class="gray">
+						2013.12.01 - 2014.01.30</p>
+					<p class="xqa">
+						<a href="#" title="查看详情" target="_blank"></a>
+					</p>
+				</div>
+			</dd>
+		</dl>
+	</div>
+</div>
+<div class="cl">
+	<div class="skinews">
+		<div class="skitop">
+			<div class="skitex">
+				专业技巧
+			</div>
+			<ul>
+				<li onmouseover="news03Syn(1);"><a id="sy1" style="color: #00a4ea;" href="#core2">美发
+				</a></li>
+				<li onmouseover="news03Syn(2);"><a id="sy2" href="#featured2" class="current" style="color: rgb(51, 51, 51);">
+					保健养生 </a></li>
+				<li onmouseover="news03Syn(3);"><a id="sy3" href="#jquerytuts2" style="color: rgb(51, 51, 51);">
+					形象设计 </a></li>
+			</ul>
+		</div>
+		<div id="TabTab03Con1">
+			<ul>
+				@foreach (var item in ViewBag.Mfjq)
+	{
+					<li><a target="_blank" href="/Detail/@item.ID" title="@item.Title">@item.ShortTitle</a></li>
+	}
+			</ul>
+		</div>
+		<div id="TabTab03Con2">
+			<ul>
+				@foreach (var item in ViewBag.Bjys)
+	{
+					<li><a target="_blank" href="/Detail/@item.ID" title="@item.Title">@item.ShortTitle</a></li>
+	}
+			</ul>
+		</div>
+		<div id="TabTab03Con3">
+			<ul>
+				@foreach (var item in ViewBag.Xxsj)
+	{
+					<li><a target="_blank" href="/Detail/@item.ID" title="@item.Title">@item.ShortTitle</a></li>
+	}
+			</ul>
+		</div>
+	</div>
+	<script>
+		function newsSyn(i) {
+			news03Syn(i);
+		}
+		function news03Syn(i) {
+			switch (i) {
+				case 1:
+					document.getElementById("TabTab03Con1").style.display = "block";
+					document.getElementById("sy1").style.color = "#00a4ea";
+					document.getElementById("sy2").style.color = "#333333";
+					document.getElementById("sy3").style.color = "#333333";
+					document.getElementById("TabTab03Con2").style.display = "none";
+					document.getElementById("TabTab03Con3").style.display = "none";
+					break;
+				case 2:
+					document.getElementById("TabTab03Con1").style.display = "none";
+					document.getElementById("sy1").style.color = "#333333";
+					document.getElementById("sy2").style.color = "#00a4ea";
+					document.getElementById("sy3").style.color = "#333333";
+					document.getElementById("TabTab03Con2").style.display = "block";
+					document.getElementById("TabTab03Con3").style.display = "none";
+					break;
+				case 3:
+					document.getElementById("TabTab03Con1").style.display = "none";
+					document.getElementById("sy1").style.color = "#333333";
+					document.getElementById("sy2").style.color = "#333333";
+					document.getElementById("sy3").style.color = "#00a4ea";
+					document.getElementById("TabTab03Con2").style.display = "none";
+					document.getElementById("TabTab03Con3").style.display = "block";
+					break;
+			}
+		}
+	</script>
+	<div class="mstd f_l">
+		<img src="/content/images/mstd_01.jpg">
+		<div class="mstd1">
+			<img src="/content/images/mstd.jpg" style="height: 185px;">
+		</div>
+	</div>
+	<div class="jcsp f_l">
+		<img src="/content/images/sqdq_03.jpg">
+		<div class="jcsp1">
+			<a href="#" title="" target="_blank">
+				<img src="/content/images/20130808032535300.jpg" width="300" height="195">
+			</a>
+		</div>
+	</div>
+</div>
+<div class="skills1">
+	<img src="/content/images/reedimg.jpg">
+</div>
+<div class="lls1">
+	<ul>
+		<li><a href="#" target="_blank">
+			<img src="/content/images/homemakeup.jpg"><p>
+				化妆作品</p>
+		</a></li>
+		<li><a href="#" target="_blank">
+			<img src="/content/images/homemakeup.jpg"><p>
+				化妆作品</p>
+		</a></li>
+		<li><a href="#" target="_blank">
+			<img src="/content/images/homemakeup.jpg"><p>
+				化妆作品</p>
+		</a></li>
+		<li><a href="#" target="_blank">
+			<img src="/content/images/homemakeup.jpg"><p>
+				化妆作品</p>
+		</a></li>
+	</ul>
+</div>
+<div class="cl ads">
+	<img src="/content/images/20131202033048595.jpg">
+</div>
+<div class="cl">
+	<div style="width: 281px; float: left;">
+		<div class="xyhd f_l">
+			<div class="title">
+				<h3>
+				</h3>
+				<span class="more"><a href="/School/News">&gt;&gt;更多</a></span></div>
+			<div class="v_n cl">
+				<div class="img">
+					<a href="" title="" target="_blank">
+						<img src="/content/images/20131206011624686.jpg" width="104" height="80" title=""></a>
+				</div>
+				@*<div class="txt">
+					<h3 class="blue">
+						<a href="#" title="/Home/Detail/@ViewBag.NewsFir.ID"
+							target="_blank">@ViewBag.NewsFir.ShortTitle</a></h3>
+					<p>@ViewBag.NewsFir.Overview</p>
+				</div>*@
+			</div>
+			<ul class="xyhdlist">
+				@foreach (var item in ViewBag.News)
+	{
+					<li><a target="_blank" href="/Home/Detail/@item.ID" title="@item.Title">@item.Title</a></li>
+	}
+			</ul>
+		</div>
+		<div id="xyhd_xia_ad" class="xyhd_xia_ad">
+			<!--广告位-->
+			@*<script language="javascript" src="/caches/poster_js/12.js"></script>*@ <a href="#"
+				target="_blank">
+				<img title="即刻预约报名 立享丰厚大礼" src="/content/images/20130424022702959.gif" width="305"
+					height="54" style="border: 0px;">
+			</a>
+		</div>
+	</div>
+	<div class="zxzq f_r">
+		<div class="zsjd f_l">
+			<div class="title cl">
+				<h3>
+				</h3>
+				<a class="tlink" href="#"></a><span class="more"><a href="#">&gt;&gt;更多</a></span></div>
+			<ul class="nlist">
+				@foreach (var item in ViewBag.Zsjd)
+	{
+					<li><a target="_blank" href="/Article/Detail/@item.ID" title="@item.Title">
+						@item.Title </a><span class="Solve">[已解决] </span></li>
+	}
+			</ul>
+		</div>
+		<div class="xsgy f_r">
+			<div class="title">
+				<h3>
+				</h3>
+				<a href=""></a><span class="more"><a href="/Article/Index/12">&gt;&gt;更多</a></span></div>
+			<div class="v_gy cl">
+				<div class="img">
+					<a target="_blank" href="/Article/Index/12">
+						<img src="/Content/images/20131003090725835.jpg" width="108" height="148" title=""></a>
+				</div>
+				<div class="txt">
+					@foreach (var item in ViewBag.Xsgy)
+	 {
+						<p>
+							<a target="_blank" href="/Article/Detail/@item.ID" title="@item.Title">@item.Title</a></p>
+	 }
+					@*<h3>
+						<a target="_blank" href="http://www.ssxf.net/student/classroom/2013100380.htm">时尚新锋让我真正爱上</a></h3>*@
+				</div>
+			</div>
+		</div>
+		<div class="zpxx f_l">
+			<div class="title">
+				<h3>
+				</h3>
+				<a class="tlink" href="/Article/Index/13"></a><span class="more"><a href="/Article/Index/13">
+					&gt;&gt;更多</a></span></div>
+			<ul class="nlist">
+				@foreach (var item in ViewBag.Zpxx)
+	{
+					<li><a href="/Article/Detail/@item.ID" title="@item.Title"
+					target="_blank">@item.Title</a></li>
+	}
+			</ul>
+		</div>
+		<div class="qzxx f_l">
+			<div class="title">
+				<h3>
+				</h3>
+				<a class="tlink" href="/Article/Index/14">
+				</a><span class="more"><a href="/Article/Index/14">&gt;&gt;更多</a></span></div>
+			<ul class="postlist">
+				@foreach (var item in ViewBag.Qzxx)
+	{
+		<li><a href="/Article/Detail/@item.ID" title="@item.Title"
+					target="_blank">@item.Title</a></li>
+	}
+			</ul>
+		</div>
+	</div>
+	<div class="c_l">
+		
+	</div>
+</div>

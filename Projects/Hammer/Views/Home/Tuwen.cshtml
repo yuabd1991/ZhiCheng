@@ -1,0 +1,30 @@
+﻿@model EasyUI.Models.SitePaginated<Entity.Entities.ArticleImageEntity>
+@{
+	ViewBag.Title = "Tuwen";
+	Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+<div class="box path">
+	<a href="/">首页</a> > <a href="">@ViewBag.Column.ColumnName</a>
+</div>
+<div class="content-left float">
+	@foreach (var item in Model)
+ {
+		<div class="box" style="overflow: hidden;">
+			<div class="news-image">
+				<img src="/content/upload/images/@item.Photo" />
+			</div>
+			<div class="news-info">
+				<h2>
+					<a href="/Home/TwDetail/@item.ID" title="@item.Title">@item.Title</a></h2>
+				@item.Overview
+				<a href="">详情</a>
+			</div>
+		</div>
+ }
+	<div class="box">
+		@Model.Pager("pager")
+	</div>
+</div>
+<div class="content-right float">
+	@{Html.RenderAction("SiteNews", "Home");}
+</div>

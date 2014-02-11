@@ -1,0 +1,22 @@
+﻿<ul>
+	<li class="@ViewBag.Home"><a href="/" title="">首页</a></li>
+	@*@foreach (var item in ViewBag.Menu)
+ {
+	 if (item.ContentTemplateID == Component.ContentType.Article || item.ContentTemplateID == Component.ContentType.ArticleWithImage)
+	 {
+		<li id="@item.ID"><a href="@item.WebListUrl/@item.ID" title="@item.ColumnName">@item.ColumnName</a></li>
+	 }
+	 else
+	 {
+		<li id="@item.ID"><a href="@item.WebDetailUrl/@item.PageID?current=@item.ID" title="@item.ColumnName">@item.ColumnName</a></li>
+	 }
+ }*@
+	<li class="@ViewBag.About"><a href="/School">学校概况</a> </li>
+	<li class="@ViewBag.SchoolNews"><a href="/School/News">学院动态</a> </li>
+	<li class="@ViewBag.Home"><a href="/">美发专业</a> </li>
+	<li class="@ViewBag.Home"><a href="/">保健养生</a> </li>
+	<li class="@ViewBag.Home"><a href="/">形象设计</a> </li>
+	<li class="@ViewBag.Home"><a href="/">招生简章</a> </li>
+	<li class="@ViewBag.Home"><a href="/">学员风采</a> </li>
+	<li class="@ViewBag.Home"><a href="/">联系我们</a> </li>
+</ul>
