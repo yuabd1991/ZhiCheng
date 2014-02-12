@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\Hammer\Hammer\Hammer\bin\EntityFramework.dll</HintPath>
+      <HintPath>E:\EC-DRP\tags\dll\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.5.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
@@ -41,7 +41,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\DLL\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\EC-DRP\tags\dll\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
