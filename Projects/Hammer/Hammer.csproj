@@ -553,7 +553,6 @@
     <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\Form.js" />
     <Content Include="Scripts\HammerEasyGrid.js" />
-    <Content Include="Scripts\jquery.carouFredSel-6.0.4-packed.js" />
     <Content Include="Scripts\jquery.easing.js" />
     <Content Include="Scripts\jquery.easyui.js" />
     <Content Include="Scripts\jquery.elastislide.js" />

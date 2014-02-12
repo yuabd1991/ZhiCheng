@@ -1402,3 +1402,8 @@ label.disabled
 {
 	vertical-align: middle;
 }
+
+#slider
+{
+	height: 487px;
+}
