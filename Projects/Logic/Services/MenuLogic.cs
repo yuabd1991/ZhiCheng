@@ -26,7 +26,7 @@ namespace Logic.Services
 						 select new MenuEntity
 						 {
 							 Enable = l.Enable,
-							 ID = l.MenuID,
+							 ID = l.ID,
 							 MenuName = l.PageName,
 							 MenuUrl = l.PageUrl,
 							 OrderIndex = l.OrderIndex,

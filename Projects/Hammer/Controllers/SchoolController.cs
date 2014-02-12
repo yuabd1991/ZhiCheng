@@ -15,10 +15,12 @@ namespace EasyUI.Controllers
 
         public ActionResult Index()
         {
-			var result = new Helpers.SystemHelper().GetDocumentByID(2);
+			ViewBag.School = new Helpers.SystemHelper().GetDocumentByID(2);
+			ViewBag.Dom = new Helpers.SystemHelper().GetDocumentByID(10);
+			ViewBag.Our = new Helpers.SystemHelper().GetDocumentByID(11);
 			ViewBag.About = "current";
 
-            return View(result);
+            return View();
         }
 
 		public ActionResult News(int? page)

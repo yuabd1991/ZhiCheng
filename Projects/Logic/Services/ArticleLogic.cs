@@ -184,6 +184,8 @@ namespace Logic.Services
 			{
 				var art = arts.FirstOrDefault();
 				art.PageVisits += 1;
+
+				_db.SaveChanges();
 			}
 
 			var article = (from l in arts
@@ -514,8 +516,16 @@ namespace Logic.Services
 
 		public ArticleImageEntity GetArticleImageByID(int id)
 		{
-			var image = (from l in _db.ArticleImages
-						 where l.ID == id
+			var im = _db.ArticleImages.Where(m => m.ID == id).ToList();
+			if (im.Count > 0)
+			{
+				var i = im.FirstOrDefault();
+				i.PageVisits += 1;
+
+				_db.SaveChanges();
+			}
+
+			var image = (from l in im
 						 select new ArticleImageEntity
 						 {
 							 Author = l.Author,
@@ -671,8 +681,15 @@ namespace Logic.Services
 
 		public DocumentEntity GetDocumentByID(int id)
 		{
-			var doc = (from l in _db.Documents
-					   where l.ID == id
+			var dc = _db.Documents.Where(m => m.ID == id).ToList();
+			if (dc.Count > 0)
+			{
+				var d = dc.FirstOrDefault();
+				d.PageVisits += 1;
+
+				_db.SaveChanges();
+			}
+			var doc = (from l in dc
 					   select new DocumentEntity
 					   {
 						   Content = l.Content,

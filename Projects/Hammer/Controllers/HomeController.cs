@@ -27,6 +27,9 @@ namespace EasyUI.Controllers
 			ViewBag.Mfjq = new Helpers.SystemHelper().GetArticleImageList(8).Take(7);
 			ViewBag.Bjys = new Helpers.SystemHelper().GetArticleImageList(9).Take(7);
 			ViewBag.Xxsj = new Helpers.SystemHelper().GetArticleImageList(10).Take(7);
+			//图片作品
+			ViewBag.ZuoPin = new Helpers.SystemHelper().GetArticleImageList(18).Take(4);
+			ViewBag.HuodongZhanShi = new Helpers.SystemHelper().GetArticleImageList(19).Take(4);
 
 			ViewBag.NewsFir = new Helpers.SystemHelper().GetArticleImageList(2).FirstOrDefault();
 			ViewBag.News = new Helpers.SystemHelper().GetArticleImageList(2).Skip(1).Take(9);
@@ -66,7 +69,6 @@ namespace EasyUI.Controllers
 				case 7: ViewBag.SchoolNews7 = "current"; break;
 				default: ViewBag.SchoolNews2 = "current"; break;
 			}
-			
 
 			var model = new SitePaginated<ArticleImageEntity>(result, page ?? 1, 9);
 
@@ -87,17 +89,17 @@ namespace EasyUI.Controllers
 			return View(detail);
 		}
 
-		public ActionResult Tuwen(int id, int? page)
-		{
-			ViewBag.Column = new Helpers.SystemHelper().GetColumnById(id);
+		//public ActionResult Tuwen(int id, int? page)
+		//{
+		//    ViewBag.Column = new Helpers.SystemHelper().GetColumnById(id);
 
-			var result = new Helpers.SystemHelper().GetArticleImageList(id);
-			//var result = new Helpers.SystemHelper().GetArticleImageList(id);
-			ViewBag.Current = id;
-			var model = new SitePaginated<ArticleImageEntity>(result, page ?? 1, 9);
+		//    var result = new Helpers.SystemHelper().GetArticleImageList(id);
+		//    //var result = new Helpers.SystemHelper().GetArticleImageList(id);
+		//    ViewBag.Current = id;
+		//    var model = new SitePaginated<ArticleImageEntity>(result, page ?? 1, 9);
 
-			return View(model);
-		}
+		//    return View(model);
+		//}
 
 		public ActionResult TDetail(int id)
 		{

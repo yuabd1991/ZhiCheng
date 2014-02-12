@@ -31,6 +31,10 @@
 				@Model.Overview
 			</div>
 			<div class="content">
+				@foreach (var item in Model.Photos)
+	{
+				<img src="/content/upload/images/@item.PictureUrl" alt="@Model.Title" style="max-width: 614px;" />
+	}
 				@Html.Raw(Model.Content)
 			</div>
 			<div class="Articlespage">

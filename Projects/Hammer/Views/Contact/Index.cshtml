@@ -20,7 +20,8 @@
 			</ul>
 			<div class="list-wrap">
 				<div id="featured2">
-					<ul>
+					@(Html.Raw(ViewBag.Con.Content))
+					@*<ul>
 						<li class="lxfs">
 							<img src="/content/images/acontact1.jpg" alt="" />
 							<p>
@@ -45,203 +46,26 @@
 								</script>
 							</div>
 						</li>
-					</ul>
+					</ul>*@
+					<div class="share">
+						<!-- Baidu Button BEGIN -->
+						<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">
+							<span class="bds_more">分享到：</span> <a class="bds_qzone">QQ空间</a> <a class="bds_tsina">
+								新浪微博</a> <a class="bds_tqq">腾讯微博</a> <a class="bds_renren">人人网</a> <a class="bds_kaixin001">
+									开心网</a> <a class="bds_douban">豆瓣网</a></div>
+						<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=769553"></script>
+						<script type="text/javascript" id="bdshell_js"></script>
+						<script type="text/javascript">
+							document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+						</script>
+					</div>
 				</div>
 				<div class="hide" id="core2">
-					<ul>
-						<li>
-							<div class="bt2">
-								&nbsp;</div>
-							<iframe frameborder="0" src="/baidu.htm"
-								style="width: 640px; height: 420px"></iframe>
-							<p>
-								<strong><span style="font-size: 14px"><span style="color: #000000">1.公交路线：</span></span></strong><br />
-								<br />
-								<span style="font-size: 14px"><span style="color: #000000">
-									54路、381路、604路、613路、646路南横街下车</span></span></p>
-							<hr />
-							<p>
-								<br />
-								<span style="font-size: 14px"><span style="color: #000000"><strong>2.地铁路线：</strong><br />
-									<br />北京地铁4号线菜市口站C口出向南300米.
-									</span></span></p>
-							<hr />
-							<p>
-								<br />
-								<span style="font-size: 14px"><span style="color: #000000"><strong>3.各路线：</strong><br />
-									<br /> 
-									【北京西站】：从北京西站乘坐54路公交车7站到南横街下车即到。<br />
-									【北京南站】：从北京南站乘地铁4号线2站到菜市口站下车C口出向南300米即到。<br />
-									【北京站】：在北京站乘坐地铁2号线到宣武门下车，转乘地铁4号线到菜市口站B口出向南300米。<br />
-									</span></span></p>
-						</li>
-					</ul>
+					@(Html.Raw(ViewBag.Bus.Content))
 				</div>
-				@*<div class="hide" id="jquerytuts2">
-					<ul>
-						<li>
-							<div class="bt2">
-								&nbsp;</div>
-							<table border="0" cellspacing="0" style="width: 630px; height: 846px">
-								<tbody>
-									<tr>
-										<td>
-											<h1>
-												<span style="color: #000000"><span style="font-size: 16px">北京时尚新锋艺术培训学校-诚聘精英</span></span></h1>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>
-												<span style="color: #000000">欢迎您选择时尚新锋，我们将给您更多的发展空间和发展机会,让我们共同努力创造美好明天！<br />
-													请将个人简历发送至：<a href="mailto:626207202@qq.com" style="color: #cf0610">626207202@qq.com</a></span><span
-														style="color: #000000">,我们将在第一时间查看并给予回复。</span><br />
-												&nbsp;</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="job">
-												<table>
-													<thead>
-														<tr>
-															<th>
-																化妆讲师
-															</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>
-																职位描述：
-															</td>
-														</tr>
-														<tr>
-															<td>
-																<p>
-																	<span style="color: #000000">1、招聘化妆讲师若干<br />
-																		2、形象气质好、举止大方、擅表达、沟通能力强。<br />
-																		3、有较强的化妆功底、有三年以上影楼化妆经验、了解化妆相关知识、有讲课经验者优先；<br />
-																		4、工作认真负责，责任心强，有敬业精神，思维开阔想法独到。</span><br />
-																	<br />
-																	&nbsp;</p>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="job">
-												<table>
-													<thead>
-														<tr>
-															<th>
-																摄影讲师
-															</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>
-																<p>
-																	<span style="color: #000000">职位描述：</span></p>
-															</td>
-														</tr>
-														<tr>
-															<td>
-																<div>
-																	<span style="color: #000000">1、招聘摄影讲师若干<br />
-																		2、具有很强的语言表达能力和沟通能力，有较强的观察力、对工作认真负责；<br />
-																		3、有2年以上摄影工作经验，熟悉各类相机使用经验，有讲课经验者优先；<br />
-																		4、责任心强、有敬业精神，有较强的团队合作精神。<br />
-																		5、对艺术创作有准确的理解力与丰富的表述能力,思维开阔想法独到；</span><br />
-																	<br />
-																	<br />
-																	&nbsp;</div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="job">
-												<table>
-													<thead>
-														<tr>
-															<th>
-																数码讲师
-															</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>
-																<p>
-																	<span style="color: #000000">职位描述：</span></p>
-															</td>
-														</tr>
-														<tr>
-															<td>
-																<p>
-																	<span style="color: #000000">1、招聘数码讲师若干<br />
-																		2、热情大方、有朝气、具有思维开拓性和延展性，沟通能力强，语言表达能力强<br />
-																		3、丰富的经验基础知识、熟悉影楼数码后期工作，有2年以上影楼工作经验、有讲课经验者优先<br />
-																		4、能独立完成数码后期教学工作、有较强的亲和力。</span><br />
-																	<br />
-																	<br />
-																	&nbsp;</p>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="job">
-												<table>
-													<thead>
-														<tr>
-															<th>
-																招生老师
-															</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>
-																<div>
-																	<span style="color: #000000">职位描述：</span></div>
-															</td>
-														</tr>
-														<tr>
-															<td>
-																<div>
-																	<span style="color: #000000">1、招聘招生老师若干<br />
-																		2、五官端正、热情大方、口齿伶俐、沟通能力强、精神面貌好、积极主动；<br />
-																		3、做事踏实、善于自我经营，有良好的心理素质和学习能力；<br />
-																		4、善于分析、总结、归纳，有强烈的事业使命感与自我规划能力。<br />
-																		5、有较强的服务意识，能够适应高效率的工作环境。&nbsp;</span><br />
-																	&nbsp;</div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</li>
-					</ul>
-				</div>*@
+				<div class="hide" id="jquerytuts2">
+					@(Html.Raw(ViewBag.ZhaoPin.Content))
+				</div>
 			</div>
 		</div>
 		<div class="dzh">

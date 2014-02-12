@@ -13,6 +13,7 @@
 	@RenderSection("head", false)
 	@{
 		var config = new EasyUI.Helpers.SystemHelper().GetSystemConfig();
+		var ann = new EasyUI.Helpers.SystemHelper().GetArticleImageList(2).Take(4);
 	}
 </head>
 <body>
@@ -50,19 +51,23 @@
 					最新动态</div>
 				<div id="announcement">
 					<ul>
-						<li><a href="#">礼大特惠</a><img class="img_hot" src="@Url.Content("~/content/images/hot.gif")"></li>
+					@foreach (var item in ann)
+	 {
+		 <li><a href="/Home/TDetail/@item.ID" title="@item.Title">@item.ShortTitle</a><img class="img_hot" src="@Url.Content("~/content/images/hot.gif")"></li>
+	 }
+						@*<li><a href="#">礼大特惠</a><img class="img_hot" src="@Url.Content("~/content/images/hot.gif")"></li>
 						<li><a href="#">周年庆宣传短片</a></li>
-						<li><a href="#">职业化妆师等级资格证书</a><img class="img_news" src="@Url.Content("~/content/images/new.gif")"></li>
+						<li><a href="#">职业化妆师等级资格证书</a><img class="img_news" src="@Url.Content("~/content/images/new.gif")"></li>*@
 					</ul>
 				</div>
 			</div>
 			<div class="Search f_r">
 				<form action="/home/search" target="_blank">
-				<div class="ico">
-				</div>
-				<input name="q" id="q" type="text" class="input" value="" />
-				<input class="btn" type="submit" value="搜索" />
-				<input type="hidden" name="s" value="3391934273541155417" />
+					<div class="ico">
+					</div>
+					<input name="q" id="q" type="text" class="input" value="" />
+					<input class="btn" type="submit" value="搜索" />
+					<input type="hidden" name="s" value="" />
 				</form>
 			</div>
 		</div>
@@ -107,20 +112,20 @@
 				@*<dd>
 					<a href="/tkz/" target="_blank" title="听课证">听课证</a></dd>*@
 				<dd>
-					<a href="#" title="美发课程">美发课程</a></dd>
+					<a href="/Home/NewsList/3" title="美发课程">美发课程</a></dd>
 				<dd>
-					<a href="#" title="保健养生课程">保健养生课程</a></dd>
+					<a href="/Home/NewsList/4" title="保健养生课程">保健养生课程</a></dd>
 				<dd>
-					<a href="#" title="形象设计课程">形象设计课程</a></dd>
+					<a href="/Home/NewsList/5" title="形象设计课程">形象设计课程</a></dd>
 			</dl>
 			<dl class="Cto">
 				<dt>证书考取</dt>
 				<dd>
 					<a href="#" target="_blank" title="证书考取">证书考取</a></dd>
-				<dd>
+				@*<dd>
 					<a href="#" title="">摄影师</a></dd>
 				<dd>
-					<a href="#" title="">化妆师</a></dd>
+					<a href="#" title="">化妆师</a></dd>*@
 			</dl>
 			<dl class="Es">
 				<dt>就业服务</dt>

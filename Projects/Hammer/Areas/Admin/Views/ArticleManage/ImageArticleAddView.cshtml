@@ -19,13 +19,9 @@
     var editor;
     KindEditor.ready(function (K) {
         editor = K.create('textarea[id="Content"]', {
-            resizeType: 1,
-            allowPreviewEmoticons: false,
-            allowImageUpload: false,
-            items: [
-				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
-				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-				'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+        	resizeType: 1,
+            allowPreviewEmoticons: true,
+            allowImageUpload: true
         });
     });
 </script>
@@ -49,7 +45,7 @@
 			<span class="red">*</span> 文章栏目：
 		</td>
 		<td>
-			<select col="ColumnID" class="dropdown" validtype="required(文章栏目)">
+			<select id="ColumnID"  col="ColumnID" class="dropdown" validtype="required(文章栏目)">
 				<option value="">请选择文章栏目</option>
 				@foreach (var item in ViewBag.Category)
 				{

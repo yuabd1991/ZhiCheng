@@ -1,6 +1,8 @@
 ﻿@model EasyUI.Models.SitePaginated<Entity.Entities.ArticleImageEntity>
 @{
-	ViewBag.Title = "News";
+	ViewBag.Title = ViewBag.Column.PageTitle;
+	ViewBag.MetaDescription = ViewBag.Column.MetaDescription;
+	ViewBag.MetaKeywords = ViewBag.Column.MetaKeywords;
 	Layout = "~/Views/Shared/_SiteLayout.cshtml";
 }
 @section head{
@@ -8,7 +10,7 @@
 }
 <div class="wl f_l">
 	<div class="CurrentLocation">
-		当前位置： <a href="/">首页</a> &gt; 学院动态
+		当前位置： <a href="/">首页</a> &gt; @ViewBag.Column.ColumnName
 	</div>
 	<div class="wcentent">
 		<div class="changeBox_a1" id="change_1">
@@ -26,7 +28,7 @@
 						<a href="/Content/images/@item.Photo" title="@item.Title" target="_blank">
 						@if(!string.IsNullOrEmpty(item.Photo))
 						{
-							<img src="/Content/images/@item.Photo" alt="@item.Title" />
+							<img src="/Content/upload/images/@item.Photo" alt="@item.Title" />
 						}
 						</a>
 					</div>

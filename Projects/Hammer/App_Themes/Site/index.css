@@ -548,6 +548,7 @@ a:hover
 .lls1 ul li img
 {
 	width: 227px;
+	height: 210px;
 }
 .lls1 ul li p
 {
@@ -992,4 +993,45 @@ a:hover
 	position: absolute;
 	right: 70px;
 	top: 30px;
+}
+
+.zuopinzhan .title {
+	height: 42px;
+	padding: 0 10px;
+	border-bottom: 1px #D2D2D2 solid;
+}
+.zuopinzhan .title h3 {
+	float: left;
+	width: 95px;
+	height: 42px;
+	line-height: 42px;
+	background: url(images/title.png) 0 -740px no-repeat;
+}
+.zuopinzhan .title .more
+{
+	width: 40px;
+	float: right;
+	height: 42px;
+	line-height: 42px;
+}
+
+
+.huodong .title {
+	height: 42px;
+	padding: 0 10px;
+	border-bottom: 1px #D2D2D2 solid;
+}
+.huodong .title h3 {
+	float: left;
+	width: 95px;
+	height: 42px;
+	line-height: 42px;
+	background: url(images/title.png) 0 -777px no-repeat;
+}
+.huodong .title .more
+{
+	width: 40px;
+	float: right;
+	height: 42px;
+	line-height: 42px;
 }

@@ -13,6 +13,9 @@ namespace EasyUI.Controllers
 
         public ActionResult Index()
         {
+			ViewBag.Con = new Helpers.SystemHelper().GetDocumentByID(3);
+			ViewBag.Bus = new Helpers.SystemHelper().GetDocumentByID(12);
+			ViewBag.ZhaoPin = new Helpers.SystemHelper().GetDocumentByID(13);
 			ViewBag.Contact = "current";
             return View();
         }

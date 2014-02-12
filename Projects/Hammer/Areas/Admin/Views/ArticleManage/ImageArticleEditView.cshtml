@@ -21,12 +21,8 @@
     KindEditor.ready(function (K) {
         editor = K.create('textarea[id="Content"]', {
             resizeType: 1,
-            allowPreviewEmoticons: false,
-            allowImageUpload: false,
-            items: [
-				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
-				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-				'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+            allowPreviewEmoticons: true,
+            allowImageUpload: true
         });
     });
 </script>
@@ -161,6 +157,7 @@
         param.Photo = JSON.stringify(imgList);
         param.Content = description;
 		param.ColumnID = $("#ColumnID").val();
+
         $.U1Ajax('/admin/ArticleManage/ImageArticleEditJson', param, function (result) {
             if (result.Tag > 0) {
                 alert('保存成功! ');

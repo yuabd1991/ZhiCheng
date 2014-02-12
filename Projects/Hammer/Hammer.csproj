@@ -333,6 +333,7 @@
     <Content Include="App_Themes\Site\images\index.jpg" />
     <Content Include="App_Themes\Site\images\noimg.jpg" />
     <Content Include="App_Themes\Site\images\number.jpg" />
+    <Content Include="App_Themes\Site\images\rhinoslider-sprite.png" />
     <Content Include="App_Themes\Site\images\SchoolOverview.jpg" />
     <Content Include="App_Themes\Site\images\Search.png" />
     <Content Include="App_Themes\Site\images\Service.jpg" />
@@ -342,6 +343,7 @@
     <Content Include="App_Themes\Site\images\title1.png" />
     <Content Include="App_Themes\Site\index.css" />
     <Content Include="App_Themes\Site\news.css" />
+    <Content Include="App_Themes\Site\rhinoslider-1.05.css" />
     <Content Include="App_Themes\Site\site.css" />
     <Content Include="App_Themes\zTree\img\diy\1_close.png" />
     <Content Include="App_Themes\zTree\img\diy\1_open.png" />
