@@ -1,0 +1,25 @@
+﻿@model Entity.Entities.ArticleEntity
+@{
+    ViewBag.Title = Model.Title;
+	ViewBag.MetaDescription = Model.MetaDescription;
+	ViewBag.MetaKeywords = Model.MetaKeywords;
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<div class="box path">
+	<a href="/">首页</a> > <a href="@ViewBag.Column.WebListUrl/@ViewBag.Column.ID" title="@ViewBag.Column.ColumnName">@ViewBag.Column.ColumnName</a>
+	 > <a href="" title="@Model.Title">@Model.Title</a>
+</div>
+<div class="content-left float">
+	<div class="box">
+		<h2 class="news-title textcenter">@Model.Title</h2>
+		<p class="textcenter">作者: @Model.Author   浏览量: @Model.PageVisits 来源: @Model.Source 时间: @Model.UpdateTime</p>
+		<div class="border-box">
+			<span class="text">文章导读:</span> @Model.Overview
+		</div>
+		@Html.Raw(Model.Content)
+	</div>
+</div>
+<div class="content-right float">
+	@{Html.RenderAction("SiteNews", "Home");}
+</div>
