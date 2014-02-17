@@ -63,21 +63,21 @@
 					<dl>
 						<dt>形象设计</dt>
 						<dd>
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">平面设计创意班</a><span class="gray">(6800元)</span><span style="display: none">&nbsp;</span>
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">整理形象设计班</a><span class="gray">(6800元)</span><span style="display: none">&nbsp;</span>
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">首席化妆大师班</a><span class="gray">(6880元)</span>&nbsp;
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">化妆就业高级班</a><span class="gray">(6980元)</span><br><span style="display: none">&nbsp;</span>
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">台式新年秘书班</a><span class="gray">(3980元)</span>&nbsp;&nbsp;
-							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">个人形象提升班</a><span>class="gray">(1980元)</span>
-							</dd>
+							<a href="http://www.zczyjy.net/Home/TDetail/4" title="平面设计创意班" target="_blank">平面设计班</a><span class="gray">(6800元)</span>
+							<a href="http://www.zczyjy.net/Home/TDetail/7" title="整理形象设计班" target="_blank">整理形象班</a><span class="gray">(6800元)</span><br/>
+							<a href="http://www.zczyjy.net/Home/TDetail/5" title="首席化妆大师班" target="_blank">化妆大师班</a><span class="gray">(6880元)</span>
+							<a href="http://www.zczyjy.net/Home/TDetail/2" title="化妆就业高级班" target="_blank">化妆高级班</a><span class="gray">(6980元)</span><br/>
+							<a href="http://www.zczyjy.net/Home/TDetail/6" title="台式新年秘书班" target="_blank">台式秘书班</a><span class="gray">(3980元)</span>
+							<a href="http://www.zczyjy.net/Home/TDetail/3" title="个人形象提升班" target="_blank">个人形象班</a><span class="gray">(1980元)</span>
+						</dd>
 					</dl>
 					<dl>
 						<dt>时尚美甲</dt>
 						<dd>
-							<a href="/makeup/kecheng/2011111022.htm" target="_blank">美甲大师班</a><span class="gray">(6800元)</span>
-							<a href="/makeup/kecheng/2011111021.htm" target="_blank">美甲全科班</a><span class="gray">(6680元)</span><br>
-							<a href="/makeup/kecheng/2011111023.htm" target="_blank">美甲就业班</a><span class="gray">(9880元)&nbsp;</span>
-							</dd>
+							<a href="http://www.zczyjy.net/Home/TDetail/18" title="美甲大师班" target="_blank">美甲大师班</a><span class="gray">(6800元)</span>
+							<a href="http://www.zczyjy.net/Home/TDetail/20" title="美甲全科班" target="_blank">美甲全科班</a><span class="gray">(6680元)</span><br/>
+							<a href="http://www.zczyjy.net/Home/TDetail/19" title="美甲就业班" target="_blank">美甲就业班</a><span class="gray">(9880元)</span>
+						</dd>
 					</dl>
 					<dl style="height: 86px">
 						<dt>摄影数码</dt>
@@ -88,7 +88,7 @@
 							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">摄影大师必须课程</a><span class="gray">(6980元)</span><br><span style="display: none">&nbsp;</span>
 							<a href="/Photoshop/kecheng/2011111433.htm" target="_blank">电子商务拍摄课程</a><span class="gray">(3980元)</span>&nbsp;&nbsp;
 						    <a href="/Photoshop/kecheng/2011111433.htm" target="_blank">平面广告数码班</a><spanclass="gray">(1980元)</span>
-							</dd>
+						</dd>
 					</dl>
 				</div>
 			</div>
@@ -254,7 +254,7 @@
 	<div class="title">
 		<h3>
 		</h3>
-		<span class="more"><a href="/School/News">&gt;&gt;更多</a></span>
+		<span class="more"><a href="/Home/NewsList/18">&gt;&gt;更多</a></span>
 	</div>
 	<ul>
 		@foreach (var item in ViewBag.ZuoPin)
@@ -269,19 +269,21 @@
 <div class="cl ads">
 	<img src="/content/images/20131202033048595.jpg">
 </div>
-<div class="lls1 c_l huodong">
+<div class="lls2 c_l huodong">
 	<div class="title">
 		<h3>
 		</h3>
-		<span class="more"><a href="/School/News">&gt;&gt;更多</a></span>
+		<span class="more"><a href="/Home/NewsList/19">&gt;&gt;更多</a></span>
 	</div>
 	<ul>
 		@foreach (var item in ViewBag.HuodongZhanShi)
   {
-			<li><a href="/Home/TDetail/@item.ID" title="@item.Title" target="_blank">
-				<img src="/content/upload/images/@item.Photo"><p>
-					@item.Title</p>
-			</a></li>
+			<li>
+				<a href="/Home/TDetail/@item.ID" title="@item.Title" target="_blank">
+					<img src="/content/upload/images/@item.Photo">
+					<p>@item.Title</p>
+				</a>
+			</li>
   }
 	</ul>
 </div>
@@ -384,5 +386,23 @@
 	}
 			</ul>
 		</div>
+	</div>
+	<div class="lls2 c_l xueyuan">
+		<div class="title">
+			<h3>
+			</h3>
+			<span class="more"><a href="/Home/NewsList/7">&gt;&gt;更多</a></span>
+		</div>
+		<ul>
+			@foreach (var item in ViewBag.XueSheng)
+	  {
+				<li>
+					<a href="/Home/TDetail/@item.ID" title="@item.Title" target="_blank">
+						<img src="/content/upload/images/@item.Photo">
+						<p>@item.Title</p>
+					</a>
+				</li>
+	  }
+		</ul>
 	</div>
 </div>

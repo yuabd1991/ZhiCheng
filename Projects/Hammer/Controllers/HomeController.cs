@@ -28,8 +28,9 @@ namespace EasyUI.Controllers
 			ViewBag.Bjys = new Helpers.SystemHelper().GetArticleImageList(9).Take(7);
 			ViewBag.Xxsj = new Helpers.SystemHelper().GetArticleImageList(10).Take(7);
 			//图片作品
-			ViewBag.ZuoPin = new Helpers.SystemHelper().GetArticleImageList(18).Take(4);
-			ViewBag.HuodongZhanShi = new Helpers.SystemHelper().GetArticleImageList(19).Take(4);
+			ViewBag.ZuoPin = new Helpers.SystemHelper().GetArticleImageList(18).Take(5);
+			ViewBag.HuodongZhanShi = new Helpers.SystemHelper().GetArticleImageList(19).Take(8);
+			ViewBag.XueSheng = new Helpers.SystemHelper().GetArticleImageList(7).Take(8);
 
 			ViewBag.NewsFir = new Helpers.SystemHelper().GetArticleImageList(2).FirstOrDefault();
 			ViewBag.News = new Helpers.SystemHelper().GetArticleImageList(2).Skip(1).Take(9);

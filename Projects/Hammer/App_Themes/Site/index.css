@@ -73,10 +73,7 @@ a:hover
 	display: inline-block;
 	color: #333;
 }
-#menu li a:hover, #menu ul li.current a,
-#menu ul li.current2 a,#menu ul li.current3 a,
-#menu ul li.current4 a,#menu ul li.current5 a,
-#menu ul li.current7 a,#menu ul li.current6 a
+#menu li a:hover, #menu ul li.current a, #menu ul li.current2 a, #menu ul li.current3 a, #menu ul li.current4 a, #menu ul li.current5 a, #menu ul li.current7 a, #menu ul li.current6 a
 {
 	background: #00a4ea;
 	color: #FFFFFF;
@@ -543,12 +540,12 @@ a:hover
 	float: left;
 	padding-top: 2px;
 	margin-left: 2px;
-	width: 193px;
+	width: 189px;
 }
 .lls1 ul li img
 {
-	width: 190px;
-	height: 266px;
+	width: 187px;
+	height: 216px;
 }
 .lls1 ul li p
 {
@@ -559,21 +556,28 @@ a:hover
 .lls2
 {
 	width: 958px;
-	height: 301px;
 	border: #d0d0d0 1px solid;
 	float: left;
+}
+.lls2 ul
+{
+	padding: 2px;
 }
 .lls2 ul li
 {
 	float: left;
-	padding-top: 2px;
-	margin-left: 2px;
-	width: 193px;
+	width: 223px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	height: 180px;
+	overflow: hidden;
+	display: block;
+	font-size: 12px;
 }
 .lls2 ul li img
 {
-	width: 190px;
-	height: 266px;
+	width: 223px;
+	height: 150px;
 }
 .lls2 ul li p
 {
@@ -1021,19 +1025,21 @@ a:hover
 	top: 30px;
 }
 
-.zuopinzhan .title {
+.huodong .title, .xueyuan .title, .zuopinzhan .title
+{
 	height: 42px;
 	padding: 0 10px;
 	border-bottom: 1px #D2D2D2 solid;
 }
-.zuopinzhan .title h3 {
+.zuopinzhan .title h3
+{
 	float: left;
 	width: 95px;
 	height: 42px;
 	line-height: 42px;
 	background: url(images/title.png) 0 -740px no-repeat;
 }
-.zuopinzhan .title .more
+.zuopinzhan .title .more,.huodong .title .more, .xueyuan .title .more
 {
 	width: 40px;
 	float: right;
@@ -1042,22 +1048,85 @@ a:hover
 }
 
 
-.huodong .title {
-	height: 42px;
-	padding: 0 10px;
-	border-bottom: 1px #D2D2D2 solid;
-}
-.huodong .title h3 {
+
+.huodong .title h3
+{
 	float: left;
 	width: 95px;
 	height: 42px;
 	line-height: 42px;
 	background: url(images/title.png) 0 -777px no-repeat;
 }
-.huodong .title .more
+.xueyuan .title h3
 {
-	width: 40px;
-	float: right;
+	float: left;
+	width: 95px;
 	height: 42px;
 	line-height: 42px;
+	background: url(images/title.png) 0 -813px no-repeat;
+}
+
+.page
+{
+	width: 100%;
+	margin: 10px auto;
+	clear: both;
+	text-align: center;
+}
+.page a
+{
+	display: inline-block;
+	min-width: 15px;
+	height: 35px;
+	padding: 0 10px;
+	line-height: 35px;
+	border: #c6c6c6 1px solid;
+	margin-right: 3px;
+	color: #00a4ea;
+	font-weight: bold;
+}
+.page .currentpage
+{
+	background: #00a4ea;
+	color: #FFF;
+}
+#container dl dd{
+	margin:10px 0;
+	
+	}
+#container dd span{
+	width:120px;
+	display:inline-block;
+	text-align:left;
+	font-size:14px;
+	}	
+#container dd input {
+    border: 1px solid #BEBEBE;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 10px;
+    text-align: left;
+    vertical-align: middle;
+    width: 168px;
+	padding:0 5px;
+}
+#container dd textarea {
+    border: 1px solid #BEBEBE;
+    font-size: 14px;
+    height: 98px !important;
+    line-height: 38px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    text-align: left;
+    vertical-align: top;
+    width: 408px !important;
+}
+#container dd input#submit
+{
+	background: #00a4ea;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	cursor: pointer;
 }

@@ -708,6 +708,8 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Article\Detail.cshtml" />
     <Content Include="Views\Zsjz\Index.cshtml" />
+    <Content Include="Views\Home\NewsDetail.cshtml" />
+    <Content Include="Views\Home\TuWenDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Components\Component.csproj">
